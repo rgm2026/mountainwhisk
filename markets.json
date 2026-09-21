@@ -1,0 +1,25 @@
+{
+  "intro": "Find Mountain Whisk at markets and pop-ups around the lake, or order ahead for pickup. Here's where I'll be.",
+  "markets": [
+    {
+      "name": "Saturday Farmers Market",
+      "place": "Location coming soon",
+      "when": "Saturdays · time coming soon",
+      "season": "Seasonal · dates coming soon",
+      "note": "Fresh baskets of cinnamon rolls, scones, cookies and breads.",
+      "map_url": ""
+    },
+    {
+      "name": "Pop-ups & Special Events",
+      "place": "Around Greers Ferry Lake",
+      "when": "Dates announced on Facebook",
+      "season": "",
+      "note": "Follow along so you don't miss a pop-up.",
+      "map_url": ""
+    }
+  ],
+  "pickup_title": "Order ahead for pickup",
+  "pickup_note": "Can't make a market? Message me with what you'd like and we'll set up a pickup time.",
+  "lake_title": "Visiting the lake?",
+  "lake_note": "Staying at a cabin, campground or rental near Greers Ferry Lake, Heber Springs, Clinton or Fairfield Bay? Message me before your trip and I'll help you plan fresh-baked goods for the weekend."
+}

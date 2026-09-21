@@ -1,0 +1,12 @@
+{
+  "name": "mountain-whisk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Website for Mountain Whisk, an organic cottage bakery in Shirley, Arkansas",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node dev.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

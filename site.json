@@ -1,0 +1,28 @@
+{
+  "business_name": "Mountain Whisk",
+  "site_url": "https://example.com",
+  "city": "Shirley",
+  "state": "AR",
+  "postal_code": "72153",
+  "areas": [
+    "Shirley",
+    "Greers Ferry Lake",
+    "Heber Springs",
+    "Clinton",
+    "Fairfield Bay",
+    "Van Buren County"
+  ],
+  "email": "hello@example.com",
+  "phone": "(501) 555-0123",
+  "facebook_url": "https://www.facebook.com/",
+  "instagram_url": "",
+  "form_endpoint": "",
+  "season_label": "Fall",
+  "season_blurb": "Maple, apple and warm-spice bakes are moving in.",
+  "hours": [
+    { "label": "Farmers market days", "value": "See the market schedule below" },
+    { "label": "Pickup orders", "value": "By appointment. Message me to schedule" },
+    { "label": "Custom cakes & events", "value": "Booked by inquiry. The earlier, the better" }
+  ],
+  "disclosure": "Baked in a home kitchen that is not inspected by the Arkansas Department of Health."
+}

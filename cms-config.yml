@@ -1,0 +1,177 @@
+# ================================================
+# Mountain Whisk — Decap CMS configuration
+# ================================================
+# ONE-TIME SETUP: replace the two values marked below.
+# Step-by-step instructions are in CMS-SETUP.md.
+
+backend:
+  name: github
+  repo: rgm2026/mountainwhisk
+  branch: main
+  auth_type: pkce
+  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID         # <- from your GitHub OAuth App
+
+site_url: https://example.com                 # <- your live website address
+display_url: https://example.com
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  # ------------------------------------------------ MENU
+  - name: menu
+    label: "🥐 Menu"
+    files:
+      - label: Menu
+        name: menu
+        file: menu.json
+        fields:
+          - { label: Intro paragraph, name: intro, widget: text }
+          - label: Show "sample menu" notice
+            name: show_sample_notice
+            widget: boolean
+            default: true
+            hint: Turn this OFF once your real menu and prices are in.
+          - { label: Sample menu notice, name: sample_notice, widget: text }
+          - label: Categories
+            name: categories
+            widget: list
+            summary: "{{fields.name}}"
+            hint: Drag to reorder. Each category appears on the menu page and the home page.
+            fields:
+              - label: Web address ID
+                name: id
+                widget: string
+                hint: One lowercase word, no spaces (like cakes or cinnamon-rolls). Used for links.
+              - { label: Category name, name: name, widget: string }
+              - { label: Short description, name: blurb, widget: text }
+              - { label: Photo, name: image, widget: image, required: false, hint: "Leave empty to show a 'photo coming soon' tile." }
+              - { label: Photo description (for accessibility & Google), name: image_alt, widget: string, required: false, hint: "Describe what's in the photo, e.g. 'Maple pecan cinnamon rolls on a wooden board'." }
+              - label: Items
+                name: items
+                widget: list
+                summary: "{{fields.name}} {{fields.price}}"
+                fields:
+                  - { label: Item name, name: name, widget: string }
+                  - { label: Description, name: description, widget: text }
+                  - { label: Price, name: price, widget: string, required: false, hint: "Optional. Type it the way you want it shown, e.g. $4 or $14 / half dozen. Leave empty to hide." }
+                  - { label: Label, name: tag, widget: string, required: false, hint: "Optional small badge, e.g. Seasonal, Made to order, Fan favorite." }
+
+  # ------------------------------------------------ MARKETS & HOURS
+  - name: markets
+    label: "📍 Markets & Hours"
+    files:
+      - label: Markets & Pickup
+        name: markets
+        file: markets.json
+        fields:
+          - { label: Intro, name: intro, widget: text }
+          - label: Markets & events
+            name: markets
+            widget: list
+            summary: "{{fields.name}} · {{fields.when}}"
+            hint: Add each farmers market or pop-up. Delete ones that are over.
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Location, name: place, widget: string, hint: "Venue and town, e.g. 'Heber Springs Farmers Market, Heber Springs, AR'." }
+              - { label: Day & time, name: when, widget: string, hint: "e.g. Saturdays · 8am–12pm" }
+              - { label: Season / dates, name: season, widget: string, required: false, hint: "e.g. May through October" }
+              - { label: Note, name: note, widget: text, required: false }
+              - { label: Google Maps link, name: map_url, widget: string, required: false, hint: "Paste a Google Maps link so people can get directions." }
+          - { label: "Order ahead: title", name: pickup_title, widget: string }
+          - { label: "Order ahead: text", name: pickup_note, widget: text }
+          - { label: "Lake visitors: title", name: lake_title, widget: string }
+          - { label: "Lake visitors: text", name: lake_note, widget: text }
+
+  # ------------------------------------------------ PAGE TEXT
+  - name: pages
+    label: "✏️ Page Text"
+    files:
+      - label: Home & About
+        name: home
+        file: content.json
+        fields:
+          - label: Home page
+            name: home
+            widget: object
+            fields:
+              - { label: Small heading above title, name: eyebrow, widget: string, hint: "Keep 'Shirley, Arkansas' in here. It helps people find you on Google." }
+              - { label: Main headline, name: headline, widget: string }
+              - { label: Tagline (script font), name: tagline, widget: string }
+              - { label: Intro paragraph, name: intro, widget: text }
+              - { label: Ingredients section title, name: ingredients_title, widget: string }
+              - { label: Ingredients section intro, name: ingredients_intro, widget: string }
+              - label: Ingredients
+                name: ingredients
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+              - { label: "'What's baking' title", name: bake_title, widget: string }
+              - { label: "'What's baking' intro", name: bake_intro, widget: string }
+              - { label: Story section title, name: about_title, widget: string }
+              - { label: Mission statement, name: mission, widget: text }
+              - { label: Your story, name: story, widget: text, hint: "Leave a blank line between paragraphs." }
+          - label: Weddings & Stays page
+            name: celebrations
+            widget: object
+            fields:
+              - { label: Page title, name: title, widget: string }
+              - { label: Intro, name: intro, widget: text }
+              - label: Service cards
+                name: cards
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+                  - label: Bullet points
+                    name: items
+                    widget: list
+                    field: { label: Bullet, name: item, widget: string }
+                  - { label: Contact form topic, name: topic, widget: string, hint: "Pre-selects this topic when someone clicks 'Inquire'." }
+                  - { label: Photo, name: image, widget: image, required: false }
+                  - { label: Photo description, name: image_alt, widget: string, required: false }
+              - { label: "'How it works' title", name: steps_title, widget: string }
+              - label: Steps
+                name: steps
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Text, name: text, widget: text }
+
+  # ------------------------------------------------ SITE SETTINGS
+  - name: settings
+    label: "⚙️ Contact & Settings"
+    files:
+      - label: Contact, Season & Hours
+        name: site
+        file: site.json
+        fields:
+          - { label: Business name, name: business_name, widget: string }
+          - { label: Website address, name: site_url, widget: string, hint: "Your live address, e.g. https://www.mountainwhisk.com (no slash at the end)." }
+          - { label: Email, name: email, widget: string }
+          - { label: Phone / text number, name: phone, widget: string }
+          - { label: Facebook page link, name: facebook_url, widget: string, required: false }
+          - { label: Instagram link, name: instagram_url, widget: string, required: false }
+          - { label: Contact form service link, name: form_endpoint, widget: string, required: false, hint: "Optional. Paste a Formspree form URL to have messages arrive by email. Leave blank to open the visitor's email app instead." }
+          - { label: Current season, name: season_label, widget: string, hint: "Shows on the home page, e.g. Fall, Winter, Spring, Summer." }
+          - { label: Season blurb, name: season_blurb, widget: string, hint: "One line about what's baking this season." }
+          - label: Hours & availability
+            name: hours
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Details, name: value, widget: string }
+          - { label: Town, name: city, widget: string }
+          - { label: State, name: state, widget: string }
+          - { label: ZIP code, name: postal_code, widget: string }
+          - label: Areas you serve
+            name: areas
+            widget: list
+            field: { label: Area, name: area, widget: string }
+            hint: Towns and landmarks near you. These help people searching in those places find you.
+          - { label: Home-kitchen disclosure (footer), name: disclosure, widget: text }

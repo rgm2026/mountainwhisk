@@ -1,0 +1,160 @@
+{
+  "intro": "Everything is baked in small batches with unbleached flour, raw sugar, grass-fed butter and dye-free ingredients. The offerings change with the seasons, so what you see here is a taste of what's coming out of the oven.",
+  "show_sample_notice": true,
+  "sample_notice": "Sample menu: final flavors and pricing are coming soon. Message me and I'll tell you what's baking this week.",
+  "categories": [
+    {
+      "id": "cakes",
+      "name": "Cakes",
+      "blurb": "Custom celebration cakes and bakery-case slices, finished with real buttercream and whipped cream.",
+      "image": "/images/cake-custom.jpg",
+      "image_alt": "Custom layered celebration cake with buttercream shell border and hand-piped lettering, made by Mountain Whisk in Shirley, Arkansas",
+      "items": [
+        {
+          "name": "Custom Celebration Cake",
+          "description": "Layer cakes designed around your theme. Birthdays, showers, anniversaries and small weddings.",
+          "price": "",
+          "tag": "Made to order"
+        },
+        {
+          "name": "Sheet-Cake Slices",
+          "description": "Vanilla with whipped cream, blueberry cream, and cinnamon-sugar crumb. Flavors rotate with the season.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Mini Carrot Cake with Caramel",
+          "description": "A single-serve carrot cake with cream cheese frosting and a caramel finish.",
+          "price": "",
+          "tag": "Seasonal"
+        }
+      ]
+    },
+    {
+      "id": "cinnamon-rolls",
+      "name": "Cinnamon Rolls",
+      "blurb": "Soft, slow-risen rolls with a generous swirl. Full-size for breakfast, minis for sharing.",
+      "image": "/images/mini-cinnamon-rolls.jpg",
+      "image_alt": "Mini cinnamon rolls with maple icing in paper cups on a rustic wooden board",
+      "items": [
+        {
+          "name": "Classic Cinnamon Roll",
+          "description": "Buttery dough, cinnamon-sugar swirl and a simple cream icing.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Maple Pecan Cinnamon Roll",
+          "description": "Topped with maple icing and candied pecans.",
+          "price": "",
+          "tag": "Fan favorite"
+        },
+        {
+          "name": "Mini Cinnamon Roll Box",
+          "description": "Mix-and-match minis. A crowd-pleaser for brunches, showers and rental welcome baskets.",
+          "price": "",
+          "tag": ""
+        }
+      ]
+    },
+    {
+      "id": "scones",
+      "name": "Scones",
+      "blurb": "Tender, crumbly and never dry, finished with fruit glazes tinted by real fruit.",
+      "image": "/images/scones.jpg",
+      "image_alt": "Fresh-baked cherry chocolate scones with pink fruit glaze on a wooden board in front of pine trees",
+      "items": [
+        {
+          "name": "Blueberry Lemon Scone",
+          "description": "Bright citrus, plump blueberries and a crisp crumb topping.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Cherry Chocolate Scone",
+          "description": "Dark chocolate and tart cherries with a fruit glaze.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Peach Scone",
+          "description": "Ripe peaches folded into a buttery scone. Available while the fruit is in season.",
+          "price": "",
+          "tag": "Seasonal"
+        },
+        {
+          "name": "Apple Fritter Scone",
+          "description": "Cinnamon-spiced apples and a sweet glaze. A fall staple.",
+          "price": "",
+          "tag": "Seasonal"
+        }
+      ]
+    },
+    {
+      "id": "cookies",
+      "name": "Cookies & Sweet Treats",
+      "blurb": "Big, soft cookies and bakery-case favorites, sold singly or in mix-and-match boxes.",
+      "image": "/images/treat-box.jpg",
+      "image_alt": "Box of assorted Mountain Whisk bakes including scones, fruit hand pies, a frosted cookie and cinnamon rolls",
+      "items": [
+        {
+          "name": "Chocolate Chip Cookie",
+          "description": "Crisp edges, soft center, real chocolate.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Snickerdoodle",
+          "description": "Cinnamon-sugar coated and pillowy.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Espresso Chocolate Cookie",
+          "description": "Deep chocolate with a coffee kick.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Fruit Hand Pies",
+          "description": "Flaky pastry, fruit filling and a light glaze. Flavors change with the season.",
+          "price": "",
+          "tag": "Seasonal"
+        }
+      ]
+    },
+    {
+      "id": "breads",
+      "name": "Breads",
+      "blurb": "Loaves and rolls made the traditional way, with nothing you can't pronounce.",
+      "image": "",
+      "image_alt": "",
+      "items": [
+        {
+          "name": "Sourdough Loaf",
+          "description": "Long-fermented, crackly crust and a tender, tangy crumb.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Cinnamon Swirl Loaf",
+          "description": "Soft sandwich-style loaf with a ribbon of cinnamon sugar.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Soft Dinner Rolls",
+          "description": "Pillowy, buttery rolls by the half-dozen or dozen.",
+          "price": "",
+          "tag": ""
+        },
+        {
+          "name": "Rosemary Focaccia",
+          "description": "Olive oil, flaky salt and fresh rosemary.",
+          "price": "",
+          "tag": "Seasonal"
+        }
+      ]
+    }
+  ]
+}

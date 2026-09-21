@@ -1,0 +1,91 @@
+{
+  "home": {
+    "eyebrow": "Organic cottage bakery in Shirley, Arkansas",
+    "headline": "Mountain Whisk",
+    "tagline": "A more mindful approach to indulgence.",
+    "intro": "Cakes, cinnamon rolls, scones, cookies and breads baked from scratch with unbleached flour, raw sugar, grass-fed butter and dye-free ingredients. The menu follows the seasons.",
+    "ingredients_title": "Clean ingredients. On purpose.",
+    "ingredients_intro": "Great baking starts with what you put in, and what you leave out.",
+    "ingredients": [
+      {
+        "title": "Unbleached flour",
+        "text": "Real flour the way it comes from the mill, with no bleaching agents."
+      },
+      {
+        "title": "Raw sugar",
+        "text": "Less-refined sweetness with a hint of caramel."
+      },
+      {
+        "title": "Grass-fed butter",
+        "text": "Rich, golden butter from grass-fed cows in every roll, scone and cookie."
+      },
+      {
+        "title": "Dye-free",
+        "text": "No artificial dyes. Any color comes from real food."
+      }
+    ],
+    "bake_title": "What's baking",
+    "bake_intro": "Five things I love making, and the menu shifts with the seasons.",
+    "about_title": "Where mountains meet the whisk",
+    "mission": "Mountain Whisk is an “organic” cottage bakery dedicated to enhancing traditional baking methods by utilizing wholesome ingredients, including unbleached flour, raw sugar, grass-fed butter and dye-free products. A more mindful approach to indulgence.",
+    "story": "Everything is baked in small batches in a home kitchen in Shirley, Arkansas. The logo, a whisk rising over the mountains, was drawn by my brother, and it says it best: a love of the hills and a love of baking, rolled into one.\n\nOfferings change with the seasons, so there's always something new to try."
+  },
+  "celebrations": {
+    "title": "Weddings, stays & campgrounds",
+    "intro": "Bring a little Mountain Whisk to your celebration, your rental guests or your campsite. I'm now taking inquiries for weddings, vacation rentals and campgrounds around Shirley and Greers Ferry Lake.",
+    "cards": [
+      {
+        "title": "Weddings & Events",
+        "text": "Dessert tables, custom cakes and brunch-ready boxes, all made with clean, wholesome ingredients.",
+        "items": [
+          "Custom wedding & celebration cakes",
+          "Dessert tables and mini treats",
+          "Cinnamon roll and scone brunch boxes",
+          "Favors for your guests"
+        ],
+        "topic": "Wedding or event",
+        "image": "/images/cake-slices.jpg",
+        "image_alt": "Three cake slices topped with whipped cream, blueberry cream and cinnamon-sugar crumb in a kraft box, with pine trees behind"
+      },
+      {
+        "title": "Airbnb & Vacation Rentals",
+        "text": "Welcome guests with a basket of fresh-baked goods waiting on the counter, a small touch that guests remember.",
+        "items": [
+          "Arrival welcome baskets",
+          "Breakfast boxes for weekend stays",
+          "Regular orders for hosts"
+        ],
+        "topic": "Airbnb or vacation rental",
+        "image": "/images/mini-cinnamon-rolls.jpg",
+        "image_alt": "Mini cinnamon rolls in paper cups arranged on wooden boards as a welcome display"
+      },
+      {
+        "title": "Campgrounds & Lodges",
+        "text": "Grab-and-go breakfast treats for campers and lake visitors, or a standing order for your camp store.",
+        "items": [
+          "Camp-morning pastry boxes",
+          "Bread and rolls for group stays",
+          "Wholesale-style orders for camp stores"
+        ],
+        "topic": "Campground or lodge",
+        "image": "/images/market-baskets.jpg",
+        "image_alt": "Wicker baskets of fresh baked goods on a table under tall trees, ready for campers and lake visitors"
+      }
+    ],
+    "steps_title": "How it works",
+    "steps": [
+      {
+        "title": "Tell me about it",
+        "text": "Share your date, guest count and the feel you're after."
+      },
+      {
+        "title": "Plan the menu",
+        "text": "We'll choose flavors and quantities that fit the season and your budget."
+      },
+      {
+        "title": "Pick up & enjoy",
+        "text": "Your order is baked fresh and ready when you need it."
+      }
+    ]
+  }
+}
